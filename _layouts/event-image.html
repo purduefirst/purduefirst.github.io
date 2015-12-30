@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<link type="text/css" rel="stylesheet" href="{{"/style.css" | prepend: site.baseurl}}"></link>
+	</head>
+	<body>
+		{% include navbar-events.html %}
+		<div class="bg-img" style="background-image: url('{{ page.image | prepend: "/img/" | prepend: site.baseurl}}');">
+			<div class="bg bg-darker">
+				<section class="mission summary vertical-center">
+					{% if page.event-date %}
+					<h1>{{ page.event-date }} <small>{{ page.event-year }}</small></h1>
+					{% endif %}
+					<hr>
+					{% if page.location-ntrl %}
+
+					<h2> {{page.location-ntrl}} </h2>
+					{% endif %}
+					<p>
+						{{ page.location }}
+					</p>
+				</section>
+			</div>
+		</div>
+		{{ content }}
+		{% include contact-us.html %}
+	</body>
+</html>

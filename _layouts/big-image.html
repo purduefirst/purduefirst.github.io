@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<link type="text/css" rel="stylesheet" href="{{"/style.css" | prepend: site.baseurl}}"></link>
+	</head>
+	<body>
+		{% include navbar-main.html %}
+		<div class="bg-img" style="background-image: url('{{ page.image | prepend: "/img/" | prepend: site.baseurl}}');">
+			<div class="bg">
+				<section class="mission vertical-center">
+					{% if page.mission-title %}
+					<h1>{{ page.mission-title }} </h1>
+					{% endif %}
+					{% if page.mission-summary %}
+					<hr>
+					<p>
+						{{ page.mission-summary }}
+					</p>
+					{% endif %}
+				</section>
+			</div>
+		</div>
+		{{ content }}
+		{% include contact-us.html %}
+	</body>
+</html>
