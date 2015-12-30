@@ -1,0 +1,35 @@
+.item-box {
+	margin: 2em;
+	padding: 2em;
+	min-width: 13em;
+	max-width: 24em;
+	border-radius: 2px;
+	transition: all 1s ease;
+	box-shadow: 0 0px 1px 0px #bbb;
+
+	.item-container {
+		color: #111;
+
+		h1 {
+			margin-top: 2em;
+			margin-bottom: 2em;
+			color: #444;
+			font-size: 2em;
+			text-align: center;
+		}
+	}
+}
+
+.item-box:hover {
+	box-shadow: 0 0 20px 4px #222;
+}
+
+.item-accent-one {
+	background-color: $accent-one;
+}
+.item-accent-two {
+	background-color: $accent-two;
+}
+.item-accent-three {
+	background-color: $accent-three;
+}

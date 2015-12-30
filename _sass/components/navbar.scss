@@ -1,0 +1,87 @@
+.navbar {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0px;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	display: block;
+	.navbar-brand {
+		display: block;
+		float: left;
+		width: auto;
+		padding-right: 20px;
+		color: white;
+		font-size: 2em;
+
+		& > img {
+			padding-right: 1em;
+			height: 2em;
+		}
+	}
+
+	.container {
+		padding-left: 2em;
+		padding-right: 2em;
+
+		&:after{
+			clear: both;
+			content: "";
+			display: block;
+		}
+	}
+
+	.navbar-child {
+		display: block;
+		float: left;
+		font-size:1.3em;
+		padding-left: 1.5em;
+		line-height: 2;
+
+		& > a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				border-bottom: solid 2px #d8b600;
+			}
+		}
+	}
+
+	.navbar-child-container {
+		margin: 0;
+		padding-left: 0 !important;
+	}
+
+	.navbar-right {
+		float: right;
+	}
+}
+
+@media (max-width: 890px) {
+	.navbar {
+		margin: auto;
+		width: 100%;
+	}
+	.navbar-child-container {
+		margin-top: 2em;
+		float: left;
+	}
+	.navbar-child {
+		margin-left: 0em;
+		margin-right: 1em;
+	}
+	.navbar-brand {
+		padding-left: 1em;
+	}
+}
+@media (min-width: 891px) {
+	.navbar {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.navbar .wide-container {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+}
