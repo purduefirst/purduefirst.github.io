@@ -1,0 +1,26 @@
+ul.dropdown {
+	background: rgba(0,0,0,0.3);
+	border-radius: 3px;
+	color: white;
+	list-style: none;
+	position: relative;
+	top: 100%;
+	left: 0;
+	display: none;
+	pading: 0;
+	overflow: hidden;
+
+	li:hover {
+		background: rgba(0,0,0,0.3);
+	}
+
+	li {
+		text-align: center;
+		padding: 0 1.25em;
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
