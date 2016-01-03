@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>Purdue FIRST Programs | {{ page.title }}</title>
+		<link type="text/css" rel="stylesheet" href="{{"/style.css" | prepend: site.baseurl}}"></link>
+	</head>
+	<body>
+		{% include navbar-compact.html %}
+		<div class="header-image">
+		</div>
+		{{ content }}
+		{% include contact-us.html %}
+	</body>
+</html>
