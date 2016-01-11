@@ -5,12 +5,13 @@ form {
 input {
 	margin-bottom: 8px;
 }
-input[type="text"], input[type="email"] {
+input[type="text"]  {
 	padding: 8px;
 	display: block;
 	font-size: 20px;
 	border: none;
 	border-bottom: 4px solid #888;
+	width: 100%;
 }
 textarea {
 	padding: 8px;
@@ -22,7 +23,10 @@ textarea {
 	height: 153px;
 	margin-bottom: 8px;
 }
-input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus, textarea:hover, textarea:focus{
+input[type="text"]:hover,
+input[type="text"]:focus,
+textarea:hover,
+textarea:focus {
 	border-bottom: 4px solid #d8b600;
 	transition: border 0.5s;
 }
@@ -38,4 +42,16 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	color: #d8b600;
 	transition: color 0.5s;
+}
+#form-column[data-columns]:before {
+	content: '2 .column.size-1of2';
+}
+.column { float: left; }
+.size-1of2 {
+	width: 50%;
+	padding: 0 2px;
+}
+#form-container {
+	padding: 0 2px;
+	width: 100%;
 }

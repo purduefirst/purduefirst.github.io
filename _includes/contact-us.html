@@ -6,10 +6,17 @@
 
 	<div class="container">
 		<h1>Contact Us!</h1>
-		<form id="contact-us">
-			<input type="email" name="address" placeholder="Email">
-			<textarea placeholder="Body"></textarea>
-			<input type="submit" value="Submit">
+		<form id="contact-us" contact-addr="{{ page.contact }}">
+			<div id="form-column" data-columns>
+				<input type='text' label='First Name' class='form-control contact-input' id='first' placeholder='First Name *'>
+				<input type='text' label='Last Name' class='form-control contact-input' id='last' placeholder='Last Name *'>
+			</div>
+			<div id="form-container">
+				<input type="text" id="subject" placeholder="Subject *">
+				<textarea placeholder="Body *" id="message"></textarea>
+				<input type="submit" value="Submit">
+			</div>
 		</form>
 	</div>
 </section>
+<script src="{{"/js/submit.js" | prepend: site.baseurl}}"></script>

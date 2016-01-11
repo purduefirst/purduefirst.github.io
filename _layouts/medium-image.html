@@ -1,7 +1,6 @@
 <html>
 	<head>
-		<title>Purdue FIRST Programs | {{ page.title }}</title>
-		<link type="text/css" rel="stylesheet" href="{{"/style.css" | prepend: site.baseurl}}"></link>
+		{% include headers.html %}
 	</head>
 	<body>
 		{% include navbar-compact.html %}
@@ -9,5 +8,6 @@
 		</div>
 		{{ content }}
 		{% include contact-us.html %}
+		<script src="{{"/js/salvattore.min.js" | prepend: site.baseurl}}"></script>
 	</body>
 </html>
