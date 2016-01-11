@@ -9,6 +9,7 @@ ul.dropdown {
 	display: none;
 	pading: 0;
 	overflow: hidden;
+	z-index: 10;
 
 	li:hover {
 		background: rgba(0,0,0,0.3);
