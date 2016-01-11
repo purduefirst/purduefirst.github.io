@@ -46,7 +46,9 @@ input[type="submit"]:hover {
 #form-column[data-columns]:before {
 	content: '2 .column.size-1of2';
 }
-.column { float: left; }
+.column {
+	display: inline block;
+}
 .size-1of2 {
 	width: 50%;
 	padding: 0 2px;

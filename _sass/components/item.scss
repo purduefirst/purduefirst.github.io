@@ -5,7 +5,7 @@
 	max-width: 24em;
 	border-radius: 2px;
 	transition: all 1s ease;
-	box-shadow: 0 0px 1px 0px #bbb;
+	box-shadow: 0 0px 1px 0px #222;
 
 	.item-container {
 		color: #111;
@@ -32,4 +32,20 @@
 }
 .item-accent-three {
 	background-color: $accent-three;
+}
+
+#item-grid[data-columns]:before {
+	content: '3 .column.size-1of3';
+}
+.column {
+	display: inline-block;
+}
+.column:after {
+	content: " ";
+	clear: both;
+	display: none;
+	height: 0;
+}
+.size-1of3 {
+	width: 33.333%;
 }
