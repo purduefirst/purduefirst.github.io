@@ -6,8 +6,6 @@ function submitMailTo( email ) {
 
     var url = 'mailto:' + form.getAttribute("contact-addr") + '?subject=' + first + ' ' + last + ': ' + subject + '&body=' + message;
 
-	alert(url);
-
     var win = window.open(url, '_blank');
     win.focus();
 }
