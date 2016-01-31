@@ -6,7 +6,7 @@
 		{% include navbar-main.html %}
 		<div class="bg-img" style="background-image: url('{{ page.image | prepend: "/img/" | prepend: site.baseurl}}');">
 			<div class="bg">
-				<section class="mission vertical-center">
+				<div class="mission vertical-center">
 					{% if page.mission-title %}
 					<h1>{{ page.mission-title }} </h1>
 					{% endif %}
@@ -16,7 +16,7 @@
 						{{ page.mission-summary }}
 					</p>
 					{% endif %}
-				</section>
+				</div>
 			</div>
 		</div>
 		{{ content }}

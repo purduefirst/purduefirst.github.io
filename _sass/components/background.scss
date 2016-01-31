@@ -37,15 +37,10 @@
 	transform: translateY(-50%);
 }
 
-
-section.mission {
-	padding: 0 !important;
-}
 .mission {
 	color: white;
 	width: 50%;
 	margin: auto;
-
 }
 .mission hr {
 	border: 2px solid #ffffff;
@@ -76,6 +71,7 @@ section.mission {
 @media (max-width: 890px) {
 	.mission {
 		width: auto;
+		padding: 4em;
 	}
 
 }
