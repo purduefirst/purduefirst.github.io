@@ -1,4 +1,9 @@
+.team-table th {
+	padding: 2px;
+	border-bottom: 2px solid $pfp-yellow;
+	margin: 2px;
+}
 .team-table td {
-	border: 1px black solid;
+	margin: 2px;
 	padding: 2px;
 }
