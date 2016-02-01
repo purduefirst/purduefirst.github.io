@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		{% include navbar-compact.html %}
-		<div class="header-image">
+		<div class="header-image"  style="background-image: url('{{ page.image | prepend: "/img/" | prepend: site.baseurl}}');">
 		</div>
 		{{ content }}
 		{% include contact-us.html %}
