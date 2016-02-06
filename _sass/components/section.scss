@@ -23,6 +23,13 @@ section {
 		border-right: .5em solid #fff;
 		margin: 2em;
 	}
+	img.floatless {
+		float: none;
+		height: auto;
+		width: auto;
+		margin: auto;
+		max-width: 100%;
+	}
 }
 .primary-section {
 	width: 100%;
