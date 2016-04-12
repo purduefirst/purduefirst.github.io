@@ -7,14 +7,25 @@
 	max-width: 100%;
 }
 section {
+	display: block;
+	clear: both;
 	box-sizing: border-box;
+	width: 100%;
 	padding-top: 8em;
 	padding-bottom: 8em;
 	padding-left: 2em;
 	padding-right: 2em;
-	width: 100%;
+
+	a {
+		color: black;
+	}
 	p {
 		line-height: 1.5;
+	}
+	ul.team-links {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
 	}
 	img {
 		height: 16em;
@@ -39,6 +50,12 @@ section {
 		display: block;
 		margin: auto;
 	}
+	img.team-logo {
+		display: block;
+		float: right;
+		border: none;
+		margin-top: 0;
+	}
 }
 .primary-section {
 	width: 100%;
@@ -50,6 +67,8 @@ section {
 	}
 	img {
 		border-color: #444444
+	}
+	div.team-logo-caption {
 	}
 }
 .secondary-section {

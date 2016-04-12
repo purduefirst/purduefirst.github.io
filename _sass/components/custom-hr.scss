@@ -1,27 +1,20 @@
-.section-hr {
-	border: 2px solid #444444;
-}
-.medium-hr {
-	float: left;
-	width: 50%;
-}
-.frc-section-461 {
-	hr {
+.primary-section {
+	.medium-hr {
+		float: left;
+		width: 50%;
+		white-space: pre;
+		content: "\a";
+	}
+	.hr-461 {
 		border: 2px solid $accent-461;
 	}
-}
-.frc-section-1646 {
-	hr {
+	.hr-1646 {
 		border: 2px solid $accent-1646;
 	}
-}
-.frc-section-1747 {
-	hr {
+	.hr-1747 {
 		border: 2px solid $accent-1747;
 	}
-}
-.frc-section-4272 {
-	hr {
+	.hr-4272 {
 		border: 2px solid $accent-4272;
 	}
 }
