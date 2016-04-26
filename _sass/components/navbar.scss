@@ -20,24 +20,21 @@
 	}
 }
 @-webkit-keyframes slideDown {
-    0%, 100% { -webkit-transform: translateY(-50px); }
-    10%, 90% { -webkit-transform: translateY(0px); }
+    0% { -webkit-transform: translateY(-50px); }
+    100% { -webkit-transform: translateY(0px); }
 }
 @-moz-keyframes slideDown {
-    0%, 100% { -moz-transform: translateY(-50px); }
-    10%, 90% { -moz-transform: translateY(0px); }
+    0% { -moz-transform: translateY(-50px); }
+    100% { -moz-transform: translateY(0px); }
 }
 @keyframes slideDown {
-    0%, 100% { transform: translateY(-50px); }
-    10%, 90% { transform: translateY(0px); }
+    0% { transform: translateY(-50px); }
+    100% { transform: translateY(0px); }
 }
-.cssanimations .csstransforms #note {
-    -webkit-transform: translateY(-50px);
-    -webkit-animation: slideDown 2.5s 1.0s 1 ease forwards;
-    -moz-transform:    translateY(-50px);
-    -moz-animation:    slideDown 2.5s 1.0s 1 ease forwards;
-    transform: translateY(-50px);
-    animation:    slideDown 2.5s 1.0s 1 ease forwards;
+#note {
+    -webkit-animation: slideDown 0.5s 1 ease forwards;
+    -moz-animation:    slideDown 0.5s  1 ease forwards;
+    animation:    slideDown 0.5s 1 ease forwards;
 }
 
 @media (max-width: 890px) {
