@@ -57,3 +57,30 @@ input[type="submit"]:hover {
 	padding: 0 2px;
 	width: 100%;
 }
+.btn {
+	border-radius: 2px;
+	background-color: white;
+	border: none;
+	color: #888;
+	font-size: 18px;
+	padding: 8px;
+}
+.btn-container {
+	text-align: center;
+}
+.btn-signup {
+    background-color: rgba(200,200,200,.30);
+    color: #d8b600;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 2;
+    padding: 0.5em;
+	transition: background-color 0.5s ease-out;
+
+}
+.btn-signup:hover {
+    background-color: rgba(200,200,200,.60);
+	color: #333333;
+}

@@ -18,6 +18,11 @@
 					<p>
 						{{ page.location }}
 					</p>
+					{% if page.link %}
+					<div class="btn-container">
+						<a class="btn btn-signup" href="{{page.link}}">Sign Up</a>
+					</div>
+					{% endif %}
 				</section>
 			</div>
 		</div>
