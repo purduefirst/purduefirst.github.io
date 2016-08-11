@@ -65,6 +65,12 @@ section {
 	hr {
 		border: 2px solid #444444;
 	}
+
+	hr.thin {
+		border: 1px solid #444444;
+		margin:0px;
+	}
+
 	img {
 		border-color: #444444
 	}
