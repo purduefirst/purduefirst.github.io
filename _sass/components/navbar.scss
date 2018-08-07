@@ -112,6 +112,9 @@
 		ul.dropdown {
 			box-shadow: 0 6px 16px rgba(0,0,0,.25);
 			padding: 0px;
+			position: absolute;
+			left: 0;
+			right: 0;
 
 			li {
 				a {
@@ -152,6 +155,7 @@
 	.navbar-child-container {
 		margin: 0;
 		padding-left: 0 !important;
+		position: relative;
 	}
 
 }
