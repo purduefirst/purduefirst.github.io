@@ -79,11 +79,15 @@ section {
 }
 .secondary-section {
 	background-color: #444444;
-	color: #black;
+	color: #000000;
 
 	hr {
 		border: 2px solid #ffffff;
 	}
+	
+	h1 {
+		color: #ffffff;	
+	}	
 }
 
 @media (max-width: 890px) {
