@@ -6,13 +6,20 @@
 .wide-container {
 	max-width: 100%;
 }
+.img-channel {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	height: auto;
+}
 section {
 	display: block;
 	clear: both;
 	box-sizing: border-box;
 	width: 100%;
-	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 	padding-left: 2em;
 	padding-right: 2em;
 
@@ -84,10 +91,10 @@ section {
 	hr {
 		border: 2px solid #ffffff;
 	}
-	
+
 	h1 {
-		color: #ffffff;	
-	}	
+		color: #ffffff;
+	}
 }
 
 @media (max-width: 890px) {
