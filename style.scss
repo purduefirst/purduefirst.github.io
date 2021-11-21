@@ -1,3 +1,32 @@
 ---
 ---
-@import '_sass/style.scss';
+@import 'bootstrap/assets/stylesheets/_bootstrap.scss';
+@import 'bootstrap/assets/stylesheets/_bootstrap-sprockets.scss';
+
+@import 'config/variables';
+@import 'components/background';
+@import 'components/custom-hr';
+@import 'components/dropdown';
+@import 'components/form';
+@import 'components/item';
+@import 'components/map';
+@import 'components/navbar';
+@import 'components/section';
+@import 'components/table';
+
+body {
+	font-family: "Verdana", sans;
+	margin:0px;
+}
+
+.container > a {
+	text-decoration: underline;
+}
+
+.container > a:hover {
+	color: $pfp-yellow;
+}
+
+*,*:before,*:after {
+	box-sizing: border-box;
+}
