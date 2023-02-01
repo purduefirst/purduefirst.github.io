@@ -4,16 +4,50 @@
 <section class="primary-section contact">
 {% endif %}
 	<div class="container">
-		<h1>Contact Us!</h1>
-			<form id="contact-us" contact-addr="{{ page.contact }}"
-				<div id="form-column" data-columns>
-					<input type='text' label='First Name' class='form-control contact-input' id='first' placeholder='First Name *'>
-					<input type='text' label='Last Name' class='form-control contact-input' id='last' placeholder='Last Name *'>
-					<input type="text" id="subject" placeholder="Subject *">
-				       	<textarea id="message" placeholder="Body *"></textarea>
-					<input type="submit" value="Submit">
-				</div>
-			</form>
+		<style>
+			footer {
+			  display:flex;
+			  flex-wrap:wrap;
+			  justify-content:space-between;
+			  color: white;
+			}
+
+			footer li {
+			  display: inline-block;
+			}
+
+			footer a {
+			  text-decoration: none;
+			  color: white;
+			}
+			
+			footer img {
+				border-right: none;
+				margine: none;
+			}
+		</style>
+		<footer>
+		  <div><p>contact us [president@purduefirst.org]</p></div>
+		  <div><p>© 2023 Purdue FIRST Programs</p></div>
+		  <div>
+			<ul>
+			  <li><a href="https://www.instagram.com/PurdueFIRST/" target="_blank"><img style="height:32px" src="socials-instagram.svg"></a></li>
+			  <li><a href="https://www.facebook.com/PurdueFIRST/" target="_blank"><img style="height:32px" src="socials-facebook.svg"></a></li>
+			  <li><a href="https://twitter.com/PurdueFIRST" target="_blank"><img style="height:32px" src="socials-twitter.svg"></a></li>
+			  <li><a href="https://www.linkedin.com/groups/4394104/" target="_blank"><img style="height:32px" src="socials-linkedin.svg"></a></li>
+			</ul>
+		  </div>
+		</footer>
+		<!--<h1>Contact Us!</h1>
+		<form id="contact-us" contact-addr="{{ page.contact }}"
+			<div id="form-column" data-columns>
+				<input type='text' label='First Name' class='form-control contact-input' id='first' placeholder='First Name *'>
+				<input type='text' label='Last Name' class='form-control contact-input' id='last' placeholder='Last Name *'>
+				<input type="text" id="subject" placeholder="Subject *">
+				<textarea id="message" placeholder="Body *"></textarea>
+				<input type="submit" value="Submit">
+			</div>
+		</form>-->
 	</div>
 </section>
-<script src="{{"/js/submit.js" | prepend: site.baseurl}}"></script>
+<!--<script src="{{"/js/submit.js" | prepend: site.baseurl}}"></script>-->
